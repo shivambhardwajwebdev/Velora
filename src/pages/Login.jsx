@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { loginUser, googleLogin } from "../services/authService";
 import { useNavigate, useLocation, Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 import "./Auth.css";
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -33,6 +34,8 @@ const Login = () => {
     }
   };
   return (
+    <>
+    <Navbar/>
     <div className="authContainer">
       <div className="auth-card">
         <h2>Welcome Back</h2>
@@ -51,6 +54,7 @@ const Login = () => {
         <p>Don't have an account? <Link to="/register">Register</Link></p>
       </div>
     </div>
+    </>
   );
 };
 

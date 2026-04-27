@@ -1,6 +1,9 @@
 // VerifyNotice.jsx
+import Navbar from "../components/Navbar";
 const VerifyNotice = () => {
   return (
+    <>
+    <Navbar/>
     <div className="authContainer">
       <div className="auth-card">
         <h2>Verify Your Email</h2>
@@ -10,11 +13,10 @@ const VerifyNotice = () => {
         <p>
           👉 Check your Inbox or Spam/Junk folder
         </p>
-        <p>
-          After verification, come back and login.
-        </p>
+
       </div>
     </div>
+    </>
   );
 };
 

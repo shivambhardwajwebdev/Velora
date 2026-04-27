@@ -3,6 +3,7 @@ import { registerUser, googleLogin } from "../services/authService";
 import { createUserProfile } from "../services/userService";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import "./Auth.css";
+import Navbar from "../components/Navbar";
 const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -49,6 +50,8 @@ const handleGoogleSignUp = async () => {
 };
 
   return (
+    <>
+    <Navbar/>
     <div className="authContainer">
       <div className="auth-card">
         <h2>Create Account</h2>
@@ -90,6 +93,7 @@ const handleGoogleSignUp = async () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
