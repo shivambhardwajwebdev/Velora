@@ -8,7 +8,7 @@ import Profile from "./pages/Profile";
 import VerifyNotice from "./pages/VerifyNotice";
 function App() {
   return (
-    <BrowserRouter basename="/Velora">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
